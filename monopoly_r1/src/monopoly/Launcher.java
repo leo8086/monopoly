@@ -1,5 +1,10 @@
 package monopoly;
 
+/**
+ * Gestisce le varie finestre di interfaccia grafica
+ * @author Leonardo
+ *
+ */
 public class Launcher {
 	
 	private static Board board = null;

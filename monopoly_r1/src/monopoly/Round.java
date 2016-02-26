@@ -2,6 +2,13 @@ package monopoly;
 
 import java.util.Random;
 
+/**
+ * Classe che gestisce i round giocati, passati un certo numero di round forniti nel costruttore
+ * il gioco termina.
+ * Contiene il metodo nel quale vengono lanciati i dadi per il giocatore corrente
+ * @author Leonardo
+ *
+ */
 public class Round {
 	
 	private int rounds;

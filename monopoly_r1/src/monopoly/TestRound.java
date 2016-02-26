@@ -4,6 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * Testing della classe Round
+ * @author Leonardo
+ *
+ */
 public class TestRound {
 	
 	private Game game;

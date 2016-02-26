@@ -4,6 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * Testing della classe game
+ * @author Leonardo
+ *
+ */
 public class TestGame {
 	
 	private Game game;

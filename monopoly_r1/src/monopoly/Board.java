@@ -5,6 +5,11 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
+/**
+ * Grafica del tabellone di monopoly
+ * @author Leonardo
+ *
+ */
 public class Board extends JPanel implements ActionListener{
 
 	/**

@@ -1,5 +1,12 @@
 package monopoly;
 
+/**
+ * Contiene le infromazioni relative al giocatore, nello specifico: nome, ordine, posizione sul
+ * tabellone, round giocati.
+ * Contine anche un metodo per muovere il giocatore nel tabellone
+ * @author Leonardo
+ *
+ */
 public class Player {
 	
 	private String playerName;
