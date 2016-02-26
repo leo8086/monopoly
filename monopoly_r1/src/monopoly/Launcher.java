@@ -18,7 +18,6 @@ public class Launcher {
 				e.printStackTrace();
 			}
         }
-		
 	}
 	
 	/**
@@ -27,8 +26,9 @@ public class Launcher {
 	private static void createBoard(){
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-            	board = new Board();
-                board.createAndShowGUI(); }
+	            	board = new Board();
+	                board.createAndShowGUI(); 
+                }
         });
 	}
 }
