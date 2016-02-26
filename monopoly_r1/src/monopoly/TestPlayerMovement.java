@@ -4,6 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * Test del movimento del giocatore, classe Player
+ * @author Leonardo
+ *
+ */
 public class TestPlayerMovement {
 	
 	private Player player = new Player("Horse");

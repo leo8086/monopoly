@@ -2,6 +2,14 @@ package monopoly;
 
 import java.util.Random;
 
+/**
+ * Classe principale la cui istanza rappresenta una partita. Contiene tutte le informazioni
+ * relative alla partita che si sta giocando: giocatori partecipanti, numero di round,
+ * giocatore corrente, ordine dei giocatori, numero di giocatori.
+ * I giocatori hanno dei nomi predefiniti dato che le pedine del monopoly sono sempre le stesse
+ * @author Leonardo
+ *
+ */
 public class Game {
 	
 	private int nPlayers;
@@ -112,7 +120,7 @@ public class Game {
 	}
 	
 	/**
-	 * 
+	 * @return il giocatore corrente
 	 */
 	public Player currentPlayer(){
 		return players[orderPointer];
