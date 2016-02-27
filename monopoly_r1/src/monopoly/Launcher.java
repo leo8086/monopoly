@@ -40,21 +40,6 @@ public class Launcher {
 	}
 	
 	/**
-	 * Nasconde l'interfaccia di creazione della partita
-	 */
-	public void nascondiCreate(){
-		preGame.nascondiFinestra();
-		createBoard();
-	}
-	
-	/**
-	 * Chiude l'interfaccia di creazione della partita
-	 */
-	public void chiudiCreate(){
-		preGame.chiudiFinestra();
-	}
-	
-	/**
 	 * Crea l'interfaccia di gioco
 	 */
 	private static void createBoard(){
@@ -65,24 +50,32 @@ public class Launcher {
                 }
         });
 	}
-	
+
 	/**
-	 * Chiude l'interfaccia di gioco
+	 * Chiude la partita e apre l'interfaccia di creazione della partita
 	 */
 	public void chiudiBoard(){
 		board.chiudiFinestra();
-		preGame.rendiVisibile();
+		createGame();
 	}
 	
 	/**
-	 * ottiene informazioni
+	 * Chiude l'interfaccia di creazione della partita
+	 */
+	public void chiudiCreate(){
+		preGame.chiudiFinestra();
+		createBoard();
+	}
+	
+	/**
+	 * ottiene informazioni sul gioco
 	 */
 	public void setGame(Game g){
 		Launcher.game = g;
 	}
 	
 	/**
-	 * Da infromazioni
+	 * Da infromazioni sul gioco
 	 */
 	public Game getGame(){
 		return Launcher.game;

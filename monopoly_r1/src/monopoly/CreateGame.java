@@ -81,24 +81,6 @@ public class CreateGame extends JPanel implements ActionListener{
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
-	
-	/**
-	 * Rende la finestra invisibile e apre l'altra
-	 */
-    public void nascondiFinestra(){
-    	frame.setVisible(false);
-    }
-    
-    public void rendiVisibile(){
-    	frame.setVisible(true);
-    }
-    
-    /**
-     * Chiusura definitiva
-     */
-	public void chiudiFinestra(){
-		frame.dispose();
-	}
 
 	@Override
 	/**
@@ -124,7 +106,7 @@ public class CreateGame extends JPanel implements ActionListener{
 	       	game = new Game(playerNumber);
 	       	if(game.startGame()==false){
 	       		//cioè se il numero di giocatori è troppo alto o troppo basso
-	       		textLabel2.setText("Insert a number between 2 and 7");
+	       		textLabel2.setText("Insert a number between 2 and 8");
 	       		textLabel2.setForeground(Color.red);
 	       	}else{
 	       		apriBoard();
@@ -153,12 +135,16 @@ public class CreateGame extends JPanel implements ActionListener{
 	 * apre la finestra di gioco e nasconde questa
 	 */
 	private void apriBoard(){
-		System.out.println(game.getPlayers().length);
 		Launcher lau = new Launcher();
 		lau.setGame(game);
-   		lau.nascondiCreate();
+   		lau.chiudiCreate();
 	}
-	
-	
+
+    /**
+     * Chiusura finestra
+     */
+	public void chiudiFinestra(){
+		frame.dispose();
+	}
 	
 }
